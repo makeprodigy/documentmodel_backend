@@ -1,0 +1,1 @@
+This is a test document about artificial intelligence. AI is a technology that enables computers to simulate human intelligence. Machine learning is a subset of AI that allows systems to learn from data. Deep learning is a type of machine learning that uses neural networks.
