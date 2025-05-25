@@ -43,7 +43,7 @@ def get_gemini_model():
             "HARM_CATEGORY_DANGEROUS_CONTENT": "BLOCK_NONE",
         }
         
-        model = genai.GenerativeModel('gemini-pro', safety_settings=safety_settings)
+        model = genai.GenerativeModel('gemini-1.5-flash', safety_settings=safety_settings)
         logger.info("Gemini model initialized successfully")
         return model
     except Exception as e:
