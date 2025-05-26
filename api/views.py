@@ -205,10 +205,12 @@ class QuestionViewSet(viewsets.ModelViewSet):
                         answer_text=answer
                     )
                     
-                    return Response({
-                        "answer": answer,
-                        "question_id": question.id
-                    })
+                    # return Response({
+                    #     "answer": answer,
+                    #     "question_id": question.id
+                    # })
+                    serializer = QuestionSerializer(question)
+                    return Response(serializer.data)
                     
                 except Exception as e:
                     logger.warning(f"Attempt {attempt + 1} failed: {str(e)}")
