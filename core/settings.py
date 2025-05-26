@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-your-secret-key'
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['documentmodel-backend.onrender.com'] #"*"
+ALLOWED_HOSTS = ['documentmodel-backend.onrender.com', "*"] 
 
 # Application definition
 
